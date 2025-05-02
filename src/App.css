@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+/* app.css - Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#FFB48F;
+  color: #333;
+}
+.app-container {
+  max-width: 800px; 
+  margin: 20px auto; 
+  padding: 20px; /* Add space inside the container */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  background-color: #fff; /* Set the background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers content horizontally */
+    gap: 20px; /* Adds consistent spacing between components */
+    margin: 0 auto;
+    padding: 0;
+}
+.h1{
+  text-align: center; /* Center horizontally */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Optional: remove padding */
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.button {
+  padding: 10px 20px;
+  background-color:#A64AC9;
+  color:#f8f9fa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: #A64AC9;
+}
+
+.hint-button {
+  display: flex;
+  align-items: center; /* Centers the icon vertically */
+  justify-content: center; /* Centers content inside the button */
+  padding: 10px; /* Reduces the size of the button */
+  background-color: #A64AC9;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Makes the button round */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+.hint-button:hover {
+  background-color: #7E37A0;
+  transform: scale(1.05); /* Add subtle hover effect */
+}
+
+
+.hint {
+  font-style: italic;
+  color: #ff8800; /* Orange color */
+  margin-bottom: 15px; /* Add space below the hint, optional */
+}
+.error {
+  color: red;
 }
