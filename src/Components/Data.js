@@ -51,7 +51,7 @@ export const Data = [
         b: 'Peregrine Falcon',
         c: 'Hummingbird',
         d: 'Raven',
-        hint: 'abcd'
+        hint: 'Peregrine Falcon'
     },
     {
         q: 'Identify the Singer:',
